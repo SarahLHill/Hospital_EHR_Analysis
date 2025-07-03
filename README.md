@@ -28,8 +28,8 @@
 | `count_of_mort_measures_better`     | Number of mortality measures where the hospital performed better than the national average.|
 | `count_of_safety_measures_better`   | Count of safety measures where performance was better than the national average.           |
 | `count_of_readm_measures_better`    | Count of readmission measures where the hospital performed better than the national average.|
-| `count_of_readm_measures_better`    | Count of readmission measures where the hospital performed better than the national average.|
-| 'total_improved_measures'           | sum of count_of_mort_measures_better', 'count_of_safety_measures_better', 'count_of_readm_measures_better.|
+| `total_improved_measures`           | Sum of count_of_mort_measures_better, count_of_safety_measures_better, and count_of_readm_measures_better |
+
 
 ### 📊 Data Summary
 
