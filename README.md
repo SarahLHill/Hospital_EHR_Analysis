@@ -1,4 +1,4 @@
-# ehr_interoperability_hospital_analysis
+# Hospital_EHR_Interoperability_Analysis
 
 
 --- 
