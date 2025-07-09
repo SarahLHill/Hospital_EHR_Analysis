@@ -20,10 +20,8 @@
 | `city_town`                         | City or town where the hospital is located.                                                |
 | `state`                             | Two-letter state abbreviation where the hospital is located.                               |
 | `zip_code`                          | 5-digit ZIP code of the hospital’s address.                                                |
-| `county_parish`                     | County or parish where the hospital is located.                                            |
 | `hospital_type`                     | Category of hospital (e.g., Acute Care, Critical Access, Psychiatric).                     |
 | `hospital_ownership`                | Entity that owns the hospital (e.g., Government - Federal, Proprietary, Voluntary Non-Profit). |
-| `emergency_services`                | Indicates whether the hospital provides emergency department services (`Yes`/`No`).        |
 | `hospital_overall_rating`           | Overall hospital quality star rating (1 to 5 stars) as assessed by CMS.                    |
 | `count_of_mort_measures_better`     | Number of mortality measures where the hospital performed better than the national average.|
 | `count_of_safety_measures_better`   | Count of safety measures where performance was better than the national average.           |
@@ -63,7 +61,6 @@ ___
 | `city_town`                                                   | City or town where the facility is located.                                                           |
 | `state`                                                       | Two-letter abbreviation of the state where the facility operates.                                     |
 | `zip_code`                                                    | ZIP code for the facility’s address.                                                                  |
-| `county_parish`                                               | County or parish in which the facility is located.                                                    |
 | `meets_criteria_for_promoting_interoperability_of_ehrs`       | Indicates whether the facility meets CMS-defined criteria for promoting EHR interoperability (`Yes`/`No`). |
 | `start_date`                                                  | Beginning date of the reporting period during which the facility was evaluated for interoperability criteria. |
 | `end_date`                                                    | End date of the reporting period for the facility’s interoperability participation.                   |
