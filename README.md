@@ -1,14 +1,24 @@
-# Hospital_EHR_Interoperability_Analysis
+# Healthcare Interoperablity 
 
-
---- 
-
-**Objective**: Analyze the relationship between Electronic Health Record (EHR) interoperability adoption and hospital performance metrics to determine if hospitals with better EHR compliance demonstrate superior quality outcomes.
+**Analyzing Hospital Compliance with EHR Modernization Standards and the Risks to Patient Privacy**
 
 ---
 
-## Dataset 1: 🏥 Hospital General Information
-***(hospital_general_info.csv)***
+## 📘 Introduction 
+
+This project takes a closer look at how EHR adoption has transformed healthcare by making patient records more accessible and improving compliance. But digital systems also raise concerns about privacy and security. By analyzing breach reports and hospital interoperability data, this study aims to reveal how modern healthcare must balance innovation with protecting sensitive information.
+
+--- 
+
+## 🔍 Objective
+This analysis investigates the relationship between hospital compliance with EHR modernization efforts and the potential risk to patient privacy. Specifically, it asks whether hospitals that meet interoperability criteria are more or less likely to report data breaches involving protected health information.
+
+--- 
+
+<details>
+  <summary>🏥 Dataset 1: Hospital General Information</summary>
+
+**File:** ***(general.csv)***
 
 
 ## 📘 Data Dictionary
@@ -20,10 +30,8 @@
 | `city_town`                         | City or town where the hospital is located.                                                |
 | `state`                             | Two-letter state abbreviation where the hospital is located.                               |
 | `zip_code`                          | 5-digit ZIP code of the hospital’s address.                                                |
-| `county_parish`                     | County or parish where the hospital is located.                                            |
 | `hospital_type`                     | Category of hospital (e.g., Acute Care, Critical Access, Psychiatric).                     |
 | `hospital_ownership`                | Entity that owns the hospital (e.g., Government - Federal, Proprietary, Voluntary Non-Profit). |
-| `emergency_services`                | Indicates whether the hospital provides emergency department services (`Yes`/`No`).        |
 | `hospital_overall_rating`           | Overall hospital quality star rating (1 to 5 stars) as assessed by CMS.                    |
 | `count_of_mort_measures_better`     | Number of mortality measures where the hospital performed better than the national average.|
 | `count_of_safety_measures_better`   | Count of safety measures where performance was better than the national average.           |
@@ -47,11 +55,16 @@ Hospital General Information - Centers for Medicare & Medicaid Services (CMS) :
 [https://data.cms.gov/provider-data/dataset/xubh-q36u](https://data.cms.gov/provider-data/dataset/xubh-q36u)
 
 
-___
+</details>
+
+--- 
 
 
-## Dataset 2: 🔗 Promoting Interoperability - Hospital
-***(hospital_interoperability_data.csv)***
+<details>
+  <summary>🔗 Dataset 2: Promoting Interoperability </summary>
+
+**File:** ***(interoperability.csv)*** 
+
 
 
 ## 📘 Data Dictionary
@@ -63,7 +76,6 @@ ___
 | `city_town`                                                   | City or town where the facility is located.                                                           |
 | `state`                                                       | Two-letter abbreviation of the state where the facility operates.                                     |
 | `zip_code`                                                    | ZIP code for the facility’s address.                                                                  |
-| `county_parish`                                               | County or parish in which the facility is located.                                                    |
 | `meets_criteria_for_promoting_interoperability_of_ehrs`       | Indicates whether the facility meets CMS-defined criteria for promoting EHR interoperability (`Yes`/`No`). |
 | `start_date`                                                  | Beginning date of the reporting period during which the facility was evaluated for interoperability criteria. |
 | `end_date`                                                    | End date of the reporting period for the facility’s interoperability participation.                   |
@@ -84,3 +96,71 @@ The Medicare Promoting Interoperability Program was created to encourage the use
 Promoting Interoperability - Hospital - Centers for Medicare & Medicaid Services (CMS) :
 
 [https://data.cms.gov/provider-data/dataset/f4ga-b9gx](https://data.cms.gov/provider-data/dataset/f4ga-b9gx)
+
+
+</details>
+
+--- 
+
+
+<details>
+  <summary>🛡️ Dataset 3: Healthcare Breach Report</summary>
+
+**File:** ***(breach.csv)***
+
+
+## 📘 Data Dictionary
+
+| Column Name                        | Description                                                                 |
+|------------------------------------|-----------------------------------------------------------------------------|
+| `name_of_covered_entity`           | Name of the hospital, organization, or healthcare provider that reported the breach. |
+| `state`                            | U.S. state where the breach occurred or where the entity is located.       |
+| `covered_entity_type`              | Type of healthcare organization involved (e.g., Hospital, Clinic, Health Plan). |
+| `individuals_affected`             | Estimated number of individuals whose data was compromised in the breach.  |
+| `breach_submission_date`           | Date the breach was officially submitted or reported to HHS.               |
+| `type_of_breach`                   | Classification of the breach (e.g., Hacking/IT Incident, Unauthorized Access). |
+| `location_of_breached_information` | Describes what type of data was affected and where the information resided (e.g., EMR, paper records, network servers). |
+
+
+### 📊 Data Summary
+
+Dataset Summary This dataset includes hospital-reported breaches of unsecured protected health information, each affecting 500 or more individuals. In accordance with section 13402(e)(4) of the HITECH Act, these cases are published by the Department of Health and Human Services and represent organizations currently under investigation by the Office for Civil Rights.
+
+- **Data Types**: Contains mostly categorical and qualitative variables, with one quantitative field.
+- **Missing Data**: Small number of missing values mostly in the state column.
++ **Total Rows:** 7
++ **Total Columns:** 7019
+
+
+### 🌐 Data Source
+
+Breach Portal: Notice to the Secretary of HHS Breach of Unsecured Protected Health Information
+U.S. Department of Health and Human Services - Office for Civil Rights
+
+[https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf](https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf))
+
+
+</details>
+
+--- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
